@@ -1710,7 +1710,7 @@
           const heading = section.querySelector('.section-head, .split-copy, .certificate-copy, .schedule-panel > div, .teacher-copy, .final-cta, h1');
           if (heading) gsap.from(heading, {y: 24, opacity: 0, duration: .72, ease: 'power2.out', scrollTrigger: {trigger: heading, start: 'top 88%', once: true}});
           const items = section.querySelectorAll('.method-card,.outcome,.pain-item,.module,.faq-list details,.date-item,.schedule-point,.photo-band figure,.teacher-pills span,.certificate-grid img,.problem-image,.curriculum-aside img,.teacher-photo');
-          if (items.length) gsap.from(items, {y: 24, opacity: 0, duration: .58, stagger: .075, ease: 'power2.out', scrollTrigger: {trigger: items[0], start: 'top 91%', once: true}});
+          if (items.length) gsap.from(items, {y: 0, opacity: 0, duration: .58, stagger: .075, ease: 'power2.out', scrollTrigger: {trigger: items[0], start: 'top 91%', once: true}});
         });
         gsap.utils.toArray('.section-tint,.certificate-section').forEach(el => gsap.fromTo(el, {backgroundColor: '#ffffff'}, {backgroundColor: getComputedStyle(el).backgroundColor, duration: .8, scrollTrigger: {trigger: el, start: 'top 92%', once: true}}));
       } else if (!reduced) {
